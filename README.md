@@ -7,6 +7,7 @@ The project has 3 central pages, each page built from HTML and Angular linked to
 1.	Home page- This screen will display event details and options for arrival confirmation or no confirmation
 2.	Coming page- If the user has confirmed arrival, he will get to this screen with a link to Waze for direction planning and Google map to view the event location
 3.	Not Coming page-This screen will show user thanks information
+
 Using AWS SNS its sends SMS messages to all the users in the DB. 
 The messages contain basic event information and a link (automatically shortened using the bitly service) to a website with all the information about the event. On the website, the guest marks if they are coming or not and the DB is updated
 START:
