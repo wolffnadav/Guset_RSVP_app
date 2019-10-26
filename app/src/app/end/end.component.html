@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="english">
+<meta charset="utf-8">
+
+<head>
+  <!--CSS emoji start-->
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <!--CSS emoji end-->
+</head>
+<div class="play-container">
+  <!--Start text area-->
+  <p dir="rtl">
+    <br>
+    חפשו בWaze
+    <a href="https://waze.com/ul/hsv8zfnhu8"> ״החתונה של ענבר ונדב״ </a> <!--todo change waze link to your own location-->
+    <br>
+    <br>
+
+  </p>
+  <!--End text area-->
+  <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+    <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+  <br>
+  <br>
+
+  <i class="em em-couple  "></i>
+
+</div>
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="english">
+<meta charset="utf-8">
+
+<head>
+  <!--CSS emoji start-->
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <!--CSS emoji end-->
+</head>
+<div class="play-container">
+  <!--Start text area-->
+  <p dir="rtl">
+    <br>
+
+    נשמח מאוד לראותכם בחתונה של
+    <br>
+    {{name}}
+    <br>
+    {{date}}
+    <br>
+    {{location}}
+    <br>
+
+    <br>
+    קודם אוכלים ואז מתחתנים,
+    <br>
+    קבלת הפנים וארוחה יחלו ב-14:00<!-- todo chenge hours--->
+    <br>
+    החופה תחל ב-15:30
+    <br>
+
+
+  </p>
+  <!--End text area-->
+
+  <br>
+  <!--Coming or not Buttons Start-->
+  <button class="mb-sm btn btn-success btn-outline" type="button" (click)="startComing()">אנחנו מגיעים</button>
+  <button class="mb-sm btn btn-danger btn-outline" type="button" (click)="startNotComing()">לצערנו לא נוכל
+    להגיע
+  </button>
+  <!--Coming or not Buttons End-->
+
+  <!--Start view for after coming is true and choose number_of_guests-->
+  <div class="play-container"  *ngIf="coming" dir="rtl">
+    <form class="play-container" [formGroup]="form" [style]="">
+      <p>
+        איזה כיף!
+      </p>
+      <label for="number_of_guests"> בחר את מספר המוזמנים שיגיעו:
+      </label>
+      <br>
+      <select class="select" formControlName="number_of_guests" id="number_of_guests">
+        <option *ngFor="let num of number_of_guests; let i = index" [value]="number_of_guests[i].id">
+          {{number_of_guests[i].name}}
+        </option>
+      </select>
+    </form>
+  </div>
+  <!--End view for after coming is true and choose number_of_guests-->
+
+  <!--Start submit button and emoji-->
+  <div class="play-container" *ngIf="coming" dir="rtl" >
+    <button class="mb-sm btn btn-success btn-outline" type="button" (click)="SubmitComing()" >
+      שלח
+
+    </button>
+
+  </div>
+  <!--End submit button and emoji-->
+  <br>
+  <br>
+  <i class="em em-couple "></i>
+
+</div>
+
+
+<!---Link to Waze
+    <a href="https://waze.com/ul/hsv8zfnhu8">במטע הפקאנים בבית יצחק</a>
+    --->
+
+<!---Link to bus registration
+      <a href="https://docs.google.com/spreadsheets/d/1XBe-qD6LS4o_NIATOqhZVlrPN-QZhnUZJMivnCdNjwo/edit?usp=sharing">
+        להרשמה להסעה מתל אביב לחצו כאן</a>
+--->
+
+

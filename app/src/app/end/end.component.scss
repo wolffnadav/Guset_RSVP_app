@@ -1,0 +1,36 @@
+agm-map {
+  height: 400px;
+
+}
+span {
+  font-weight: bold;
+  background: lightgray;
+  padding: .3em .8em;
+  cursor: pointer;
+}
+
+.em-couple {
+  font-size: 30pt;
+}
+
+.btn{
+  background-color: white;
+  width: 200px;
+}
+.select{
+  background-color: white;
+}
+
+.play-container {
+  padding: 3em;
+  border: 1px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  input {
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+}
