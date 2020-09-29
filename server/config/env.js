@@ -65,13 +65,13 @@ config.constants = {
 };
 
 
-//todo  create amazon aws account and insert your aws access id
+//todo configure your aws account and insert your aww credentials
 config.aws = {
     amazon_access_id: '123456',
     amazon_access_secret: '123456',
-    region: 'eu-west-1', //todo choose your correct rigion
+    region: 'eu-west-1',
     reko: {
-        arnRole: 'arn:aws:iam::084493032551:role/Rekognition',
+        arnRole: '123',
         amazon_access_id: '123',
         amazon_access_secret: 'wT/123',
     }

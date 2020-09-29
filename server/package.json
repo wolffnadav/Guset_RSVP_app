@@ -5,15 +5,15 @@
     "async": "~1.5.2",
     "aws-sdk": "~2.78.0",
     "bluebird": "~3.4.7",
-    "express": "~4.14.1",
-    "googleapis": "~19.0.0",
-    "helmet": "~3.5.0",
-    "mongoose": "~5.2.14",
-    "morgan": "~1.5.0",
-    "request": "~2.79.0",
-    "sendgrid": "~4.7.1",
-    "cors": "^2.8.5",
     "body-parser": "^1.19.0",
-    "console-stamp": "0.2.6"
+    "console-stamp": "0.2.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "googleapis": "^60.0.1",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0",
+    "request": "~2.79.0",
+    "sendgrid": "~4.7.1"
   }
 }

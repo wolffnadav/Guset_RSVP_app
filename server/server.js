@@ -80,6 +80,3 @@ app.use(function (error, req, res, next) {
         next();
     }
 });
-
-
-//todo git ignore - idea node_modole
