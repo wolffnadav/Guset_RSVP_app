@@ -2,7 +2,7 @@
   "name": "wedding",
   "main": "server.js",
   "dependencies": {
-    "async": "~1.5.2",
+    "async": "~2.6.4",
     "aws-sdk": "~2.78.0",
     "bluebird": "~3.4.7",
     "body-parser": "^1.19.0",
